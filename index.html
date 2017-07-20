@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myModule" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <title>Cat Dog</title>
+  </head>
+  <body ng-controller='routeCtrl'>
+
+    <div class="heading">
+      <h3> Hi! {{name}}, click the links to see Cat-Dog...and more</h3>
+    </div>
+
+    <div class="links">
+      <a class="cat" href="#!/cat">Cat</a>
+      <a class="dog" href="#!/dog">Dog</a>
+      <a class="elephant" href="#!/elephant">Elephant</a>
+      <a class="penguin" href="#!/penguin">Penguin</a>
+    </div>
+
+
+
+    <ng-view></ng-view>
+
+    <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src ="https://code.angularjs.org/1.6.4/angular-route.js"></script>
+    <script src="module.js"></script>
+    <script src="config.js"></script>
+    <script src="controller.js"></script>
+  </body>
+</html>
